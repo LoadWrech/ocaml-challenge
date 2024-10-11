@@ -11,6 +11,6 @@ bool =
 
 let nand3(a, b) = 
 bool =
-    match (a && b) with
-    |   true -> false
+    match (a, b) with
+    |   (true, true) -> false
     |   _ -> true;;
