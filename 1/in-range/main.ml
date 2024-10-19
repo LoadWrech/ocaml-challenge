@@ -1,0 +1,1 @@
+let in_range x a b = x <= b && x >= a;;
