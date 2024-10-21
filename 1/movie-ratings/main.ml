@@ -8,13 +8,13 @@ let movie_rating (a : int) (b : int) (c : int) : string =
       if((a + b + c) == 14) then
         "Highly Recommended"
       else 
-        if((a + b + c) >= 11 && ((a == 4 && b == 4) || (a == 4 && c == 4) || (b == 4 && c == 4))) then
+        if((a + b + c) >= 11 && ((a >= 4 && b >= 4) || (a >= 4 && c >= 4) || (b >= 4 && c >= 4))) then
           "Recommended"
         else
           "Mixed Reviews";;
           
 assert(movie_rating 5 5 5 = "Masterpiece");;
 assert(movie_rating 5 4 5 = "Highly Recommended");;
-assert(movie_rating 5 3 5 = "Mixed Reviews");;
+assert(movie_rating 5 3 5 = "Recommended");;
 assert(movie_rating 4 3 4 = "Recommended");;
 assert(movie_rating 1 3 5 = "Mixed Reviews");;
