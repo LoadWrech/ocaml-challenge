@@ -14,5 +14,5 @@ let rec gcd2 (a : int) (b : int) : int =
     if b = 0 then
         a
     else
-        gcd (b) (a mod b)
+        gcd2 (b) (a mod b)
 ;;

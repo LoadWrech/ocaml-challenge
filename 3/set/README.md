@@ -42,7 +42,7 @@ assert(seteq [1;5;3] [1;3;5]);;
 assert(seteq [1;5;2] [1;3;5] = false);;
 assert(seteq [[1;2]] [[2;1]] = false);;
 assert(seteq [[1];[1;2]] [[1;2];[1]]);;
-assert(mem [1;2] [[1];[2];[2;1]] = false);;
+assert(seteq [1;2] [[1];[2];[2;1]] = false);;
 ```
 
 ## Check for duplicates
